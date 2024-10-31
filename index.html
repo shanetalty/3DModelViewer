@@ -19,8 +19,17 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: black;
+      background: linear-gradient(135deg, #A23AEE, #4761EB, #68E1A4);
+      background-size: 200% 200%;
+      animation: gradientShift 10s ease infinite;
       font-family: 'Roboto Mono', monospace;
+    }
+
+    /* Gradient animation */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     /* Button styling */
